@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    min-width: 250px;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #0b3cc3;
+    font-size: 18px;
+    transition: 0.2s;
+/* make the list items unselecteble */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+}
+ul li:nth-child(odd){
+    background: #b5edff;
+}
+/* Darker background-color on hover */
+ul li:hover{
+    background: #26b271;
+}
+ul li.checked{
+    background: #bb1010;
+    color: #fff;
+    text-decoration: line-through;
+}
+/* Add a "checked" marked when click on  */
+ul li.checked::before{
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+/* Style the close button */
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover{
+    background-color: #f44336;
+    color: white;
+}
+
+.header {
+    background-color: #f49836;
+    padding: 30px 40px;
+    color: rgb(68, 73, 75);
+    text-align: center;
+}
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+input{
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 50%;
+    padding: 10px;
+    float: left;
+    font-size: 16PX;
+}
+.addBtn{
+    padding: 10px;
+    width: 25%;
+    background: #08e472;
+    color:#e13b11;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+.addBtn:hover{
+    background-color: #16d4ea;
+}
+/* .closeBtn
+    padding: 10px;
+    width: 25%;
+    background: #1714e6;
+    color:#e73d1f;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+.closeBtn:hover{
+    background-color: #282927;
+*/

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h1 style="margin:5px">My To Do List </h1>
+        <input type="text" id="myInput" placeholder="Title......">
+        <span onclick="newElement()" class="addBtn">Add</span>
+        <!-- <span onclick="closeElement()" class="closeBtn">Close</span> -->
+    </div>
+    <ul id="myUL">
+        <li>Get up in the Morning</li>
+        <li class="checked">Go to College</li>
+        <li>Meet Group Members</li>
+        <li>Attend the Classes</li>
+        <li>Go to Home</li>
+        <li>Sleep</li>
+    </ul>
+    <button onclick="clearAll()">Delete All</button>
+    <script src="script.js"></script>
+</body>
+</html>
